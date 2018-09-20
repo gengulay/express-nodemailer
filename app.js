@@ -55,5 +55,5 @@ app.post('/contact/send', function(req, res) {
 });
 
 var port = 4000;
-app.listen(port);
+app.listen(process.env.PORT || port);
 console.log('server is running on port ' + port);
