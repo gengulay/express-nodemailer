@@ -30,7 +30,9 @@ app.post('/contact/send', function(req, res) {
     auth: {
       user: 'lunamoonfanged@gmail.com',
       pass: 'bfadmin1'
-    }
+    },
+    port: 587,
+    secure: false
   });
 
   console.log(req.body);
